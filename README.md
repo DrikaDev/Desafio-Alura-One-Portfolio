@@ -2,7 +2,7 @@
 
 Construção de um portfólio baseado no Figma para mostrar nossos projetos aos possíveis recrutadores que visitarem nossa página! 😁\
 Requisitos:\
-Possui um menu de navegação;\
+Possuir um menu de navegação;\
 Imagem de banner;\
 Seção "Sobre Mim" com foto do perfil e link pras redes sociais;\
 Seção de Hobbies e Soft Skills;\
