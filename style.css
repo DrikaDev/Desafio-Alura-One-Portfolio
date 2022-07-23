@@ -1,0 +1,456 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-link: #000;
+   --cor-titulos: #464646;
+   --cor-fundo: #fbfbfb;
+   --cor-caixas: #fbfbfb;
+   --cor-botoes: #2A7AE4;
+}
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(to left, #005aa7, #fffde4); 
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso sintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 10vh;
+    margin: 0px 10px;
+}
+
+section header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor-titulos);
+}
+
+/* itens do menu */
+nav ul.menu__list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 750px;
+    font-size: 1rem;
+}
+
+nav ul.menu__list li:hover{
+    border-bottom: 3px solid var(--cor-botoes);
+}
+
+/* ajuste de icone */
+header img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/*Sessão Title*/
+/* correção de margin do título */
+section.title{
+    margin: 32px 0px; /*32 pra cima e baixo - 0 pra direita e esquerda*/
+}
+
+/* manipulando o tamanho do container principal */
+div.title__container{
+    width: 45rem;
+}
+
+/* título principal */
+div.title__container h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    line-height: 50px;
+}
+
+/*organizando conteúdo da dessão título*/
+div.title__div{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+/* imagem do perfil */
+section.title img.title__profile{
+    width: 300px;
+    border-radius: 200px;
+    margin-right: 30px;
+    box-shadow: 10px 10px 15px var(--cor-de-link);
+    transition: 1s all;
+}
+
+section.title img.title__profile:hover{
+    /* transform: scale(1.2); */
+    transform: rotate(360deg);
+}
+
+/*sub-título*/
+section.title div.title__div div.title__container .title__subsection{
+    font-size: 1.3rem;
+    line-height: 23px;
+    width: 600px;
+}
+
+section.title div.title__div div.title__container h3{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+/*container dos links das redes sociais*/
+section.title div.title__div ul.title__network{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    font-size: 1rem;
+    width: 500px;
+}
+
+section.title div.title__div ul.title__network li:hover{
+    border-bottom: 4px solid var(--cor-botoes);
+}
+
+/*Sessão About*/
+section.about{
+    background-color: var(--cor-fundo);
+    padding: 50px 150px;
+}
+
+/*título da sessão about*/
+.about__title{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+
+/*container da sessão about*/
+.about__container{
+    width: 60%;
+}
+
+/*textos da sessão about*/
+section.about div.about__container p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+/*assinatura*/
+/* section.about div.about__container img{
+    margin: 16px 0;
+} */
+
+/*alinhamento titulo de todas as sessões*/
+.skills__title, .hobbies__title, .academic__title, .experience__section__title{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*sessão skilss*/
+section.skills{
+    padding: 40px 100px;
+}
+
+/*alinhando icones com flex*/
+section.skills div.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/*box das skills*/
+section.skills div.skills__line div.skills__box{
+    background-color: var(--cor-caixas);
+    box-shadow: 10px 10px 15px var(--cor-titulos);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    margin: 23px 15px 23px 15px;
+    width: 150px;
+    transition: 1s all;
+}
+
+section.skills div.skills__line div.skills__box:hover{
+    transform: rotate(-20deg);
+}
+
+.skills__box ul{
+    margin: 0;
+    padding: 0;
+}
+
+.skills__box ul li img{
+    width: 9rem;
+}
+
+/*Hobbies*/
+
+/*espaçamento da sessão*/
+section.hobbies{
+    padding: 50px 100px;
+}
+
+/*alinhando icones com flex*/
+.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/*box dos hobbies*/
+.hobbies__box{
+    background: var(--cor-caixas);
+    box-shadow: 10px 10px 15px var(--cor-titulos);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    margin: 23px 15px 23px 8px;
+    width: 150px;
+    height: 160px;
+    transition: 1s all;
+}
+
+.hobbies__box:hover{
+    transform: rotate(20deg);
+}
+
+.hobbies__box ul{
+    margin: 0;
+    padding: 0;
+}
+
+.hobbies__box ul li img{
+    width: 07rem;
+    padding: 1rem;
+}
+
+.hobbies__name{
+    text-align: center;
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+    padding: 50px 0;
+    background-color: var(--cor-caixas);
+}
+
+/*Ajustando posicionamento com display flex*/
+section.academic div.academic__courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.academic div.academic__courses__box{
+    width: 26.5rem;
+    margin: 0 1rem;
+}
+
+.academic__courses__list ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.academic__courses__list ul li{
+    padding: 0;
+    margin: 32px;
+}
+
+.academic__courses__list img{
+    background: var(--cor-caixas);
+    box-shadow: 10px 10px 15px var(--cor-titulos);
+    width: 9rem;
+    padding: 5%;
+    transition: 1s all;
+}
+
+.academic__courses__list img:hover{
+    transform: scale(1.2);
+}
+
+/* experiência*/
+
+section.experience{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__section__title{
+    margin-bottom: 3rem;
+}
+
+.experiencie__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.experiencie__box img{
+    width: 35rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    box-shadow: 10px 10px 15px var(--cor-titulos);
+    border-radius: 10px;
+    transition: 1s all;
+}
+
+.experiencie__box img:hover{
+    transform: scale(1.1);
+}
+
+.experience__description button{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    box-shadow: 10px 10px 15px var(--cor-titulos);
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.experience__description button:hover{
+    transform: scale(1.2);
+}
+
+/*Contato*/
+
+.formcontato__contacto{
+    width: 90%;
+    height: 30rem;
+    display: flex;
+    padding: 5rem;
+}
+
+.formcontato__title{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+
+.formcontato__img{
+    width: 20rem;
+    margin-right: 5rem;
+    transition: 1s all;
+}
+
+.formcontato__img:hover{
+    transform: rotate(360deg);
+}
+
+.formcontato__form input, textarea{
+    font-family: 'Pacifico', cursive;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30rem;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.formcontato__botao{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.ativarCorBotao{
+    opacity: none;
+    /* background-color: var(--cor-botoes); */
+}
+
+/*footeer*/
+
+section.footer{
+    font-family: 'Pacifico', cursive;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
