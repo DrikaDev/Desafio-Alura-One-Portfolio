@@ -7,7 +7,7 @@ Imagem de banner;\
 Seção "Sobre Mim" com foto do perfil e link pras redes sociais;\
 Seção de Hobbies e Soft Skills;\
 Seção de formações e cursos;\
-E formulário de contato com rodapé.\
+E formulário de contato com rodapé.
 
 ##
 <h2> Linguagens utilizadas: </h2>
