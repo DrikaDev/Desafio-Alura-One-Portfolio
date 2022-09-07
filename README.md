@@ -6,11 +6,11 @@ Rápida descrição do objetivo de fazer esse projeto:
 | -------------  | --- |
 | :sparkles: Nome        | **Portfólio Adriana Gutierrez**
 | :label: Tecnologias | JavaScript, Html, Css
-| :rocket: URL         | https://url-deploy.com.br
-| :fire: Desafio     | https://url-do-desafio.com.br
+| :rocket: URL         | https://drikadev.github.io/Desafio-Alura-One-Portfolio/
+| :fire: Desafio     | https://drikadev.github.io/Desafio-Alura-One-Portfolio/
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+![PortfólioAlura](https://user-images.githubusercontent.com/102387476/188776954-bd5e422b-cce8-423f-9115-891db2137154.jpg) #vitrinedev
 
 ## Detalhes do projeto
 
